@@ -1,0 +1,69 @@
+@charset "utf-8";
+/* CSS Document */
+/*RESET*/
+*{margin: o; padding: 0; font-size: 100%; border: none; outline: none; font-wieght:300; box-sizing:border-box; font-family: Arial, Helvetica, sans-serif;}
+body{background-color: #ccc;}
+a{ text-decoration: none;}
+ul{list-style: none;}
+img{max-width: 100%}
+/*--------------//----------*/
+.container{width: 100%; float: left; padding: 3% 4%; text-align: center;}
+/*------------------------------------------*/
+.logo{width: 56px; height: 56px; float: left; background: url(img/logo.png) center center/56px no-repeat; font-size:0;}	
+.btn-menu{width:56px; height:56px; float: right; text-align: center; color: #fff; border-radius: 56px; cursor: pointer; background:#1C1C1C;}
+.menu{display:none; width: 100%; height: auto; position: fixed; background-color: rgba(0,0,0,0.9); top: 0; left: 0;}
+.btn-close{font-size: 3em; float: right; color: #fff; cursor: pointer; margin-right: 9%; margin-top:5%}
+.menu ul{width: 100%; float: left; text-align: center;}
+.menu li{padding: 1.5%;}
+.menu li a{font-size: 1em; color: #fff; padding: 1.5% 3%;}
+.menu li:hover{border: solid 1px #fff;}
+/*------------------------------------------*/
+.baner{ background:url(img/baner.png) no-repeat fixed;}
+.title{ width: 100%;}
+.title h2{ font-size: 2em; color: #1c1c1c; font-weight:700;}
+.title h3{font-size: 1.5em; color:#1c1c1c}
+.button{ width: 100%; float:left; margin-top:2%;}
+.buttons i{ float: right;}
+.btn{width: 100%; font-size: 1.5em; text-align:left; cursor: pointer; padding: 5%; border-radius: 10px; }
+.btn-saibamais{ background-color: #fff; color:1c1c1c;}
+.btn-contato{ background-color: #000; color:#fff; margin-top: 2%;}
+/*------------------------------------------*/	
+.servico{ width:100%; background-color: #fff; text-align: left; border-radius: 7px; margin-bottom:3%; }
+.servico img{ border-radius:7px 7px 0 0;}
+.inner{ padding: 7%;}
+.inner a{ font-size: 1.2em; color:#333;; font-weight:700;}
+.inner h4{ font-size:1.2em; color:#000; margin-top:4%;S}
+.inner p{margin-top:3%; color: #130400; line-height:1.2em;}
+/*------------------------------------------*/
+.rodape{ background:#333;}
+.social-icons a{ font-size:1.5em; color: #ccc; margin-right: 3%;}
+.social-icons a:last-child{ margin-right:0;}
+.social-icons a:hover{ color:#fff;}
+.copyright{ margin-top:2%; color:#ccc;}
+/*------------------------------------------*/
+@media screen and (min-width: 480px){
+	.logo{width: 56px; background: url(img/logo2.png) center center/56px no-repeat; }
+	.btn{ font-size: 2em;}	
+	}
+@media screen and (min-width: 768px){
+	.servico{ width:49%; float: left; margin-right:2%;}
+	.servico:nth-child(2){ margin-right:0;}
+	}
+@media screen and (min-width: 960px){
+	.title{ width: 70%; float: left; text-align:left;}
+	.title h2{font-size: 2.5em;}
+	.title h3{ font-size: 1.8em}
+	.buttons{width: 30%; float: right; margin-top:0;}
+	.servico{ width:32%;}
+	.servico:nth-child(2){ margin-right:2%;}
+	.servico:nth-child(3){ margin-right:0;}
+	}
+@media screen and (min-width: 1280px){
+	.btn-menu { display: none;}
+	.btn-close { display: none;}
+	.menu {width: auto; height:56px; line-height:56px; float: right; background-color:#ccc; display: block !important; position: static;}
+	.menu li{ padding:0; float: left;}
+	.menu li a{color: #000; font-size: 1em; padding: 15px;}
+	.menu li a:hover{ color: #1c1c1c;}
+	.menu li:hover{ border: none;}
+    }
